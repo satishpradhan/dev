@@ -12,11 +12,13 @@
     
     .popup {
         width: 90%;
+        height: 400px; /* Increased height */
         margin: 50px auto;
         background-color: #fff;
         border: 1px solid #ccc;
         padding: 20px;
         text-align: center;
+        overflow-y: auto; /* Add scroll if content exceeds height */
     }
     
     h1 {
@@ -37,6 +39,7 @@
     @media (max-width: 480px) {
         .popup {
             width: 90%;
+            height: 600px; /* Adjusted height for smaller screens */
             margin: 20px auto;
             padding: 10px;
         }
